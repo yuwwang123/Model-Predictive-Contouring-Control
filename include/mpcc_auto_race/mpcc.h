@@ -92,10 +92,12 @@ private:
     double r_v;
     double r_steer;
 
+    double last_steer_cmd;
     int N;  // horizon
     double Ts;
 
     double SPEED_MAX;
+    double SPEED_MIN;
     double STEER_MAX;
     string drive_topic;
 

@@ -122,7 +122,7 @@ public:
                 end = mid + SEARCH_RANGE;
             }
             int min_ind, second_min_ind;
-            double min_dist2 = 100000.0;
+            double min_dist2 = 10000000.0;
             for (int i=start; i<end; i++){
                 if (i>centerline.size()-1){ i=0;}
                 if (i<0){ i=centerline.size()-1;}
@@ -140,6 +140,7 @@ public:
             int min_ind_next = min_ind+1;
             if (min_ind_next>centerline.size()-1){ min_ind_next=0;}
             if (min_ind_prev<0){ min_ind_prev=centerline.size()-1;}
+
             //closest line segment: either [min_ind ,min_ind+1] or [min_ind,min_ind-1]
             if (pow(x-centerline.at(min_ind_next).x, 2) + pow(y-centerline.at(min_ind_next).y, 2) <
                     pow(x-centerline.at(min_ind_prev).x, 2) + pow(y-centerline.at(min_ind_prev).y, 2)){
