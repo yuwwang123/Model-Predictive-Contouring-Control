@@ -101,6 +101,7 @@ private:
     double STEER_MAX;
     string drive_topic;
 
+    double speed_m_;
     vector<geometry_msgs::Point> border_lines;
 
 

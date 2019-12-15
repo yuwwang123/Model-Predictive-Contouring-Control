@@ -1,14 +1,14 @@
 file_name: "/home/yuwei/rcws/logs/yuwei_wp.csv"
 
 pose_topic : "odom"
-q_c : 0.1
-q_l : 100.0
-q_v : 0.1
+q_c : 0.045
+q_l : 0.0
+q_v : 15
 r_v : 0.01
-r_steer: 0.1
+r_steer: 0.25
 
 N: 25
-Ts: 0.05
+Ts: 0.02
 
 SPEED_MAX: 2.50
 SPEED_MIN: 0.10
